@@ -1,0 +1,61 @@
+debug: true
+
+security:
+  user:
+    password: none
+cors:
+  allowed:
+      origins: "*"
+  
+# Set the file size limit (default 1Mb). If you want to specify that files be 
+# unlimited set the multipart.maxFileSize property to -1.
+multipart:
+   maxFileSize: -1
+   maxRequestSize: 2048MB
+          
+spring:
+  data:
+    rest:
+      base-uri: /
+#  http:
+#   multipart:
+#      enabled: true
+#      max-file-size: -1
+#      max-request-size: 1024Mb
+      
+---
+
+spring:
+  profiles: default, local
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/bti
+    username: root
+    password: root
+    max-active: 10
+    max-age: 10000
+    connection-timeout: 10000
+    driver-class-name: com.mysql.jdbc.Driver
+    
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create
+
+server:
+   port: 8086
+
+ # host: 10.8.18.48  for local
+ # host: asmtp.goodtech.co.in for staging
+ 
+smtp:
+  protocol : smtp
+  host: smtphost
+  username: smtpusername
+  password: smtppassword
+  port: 250
+  sender: BTI
+
+spring.jpa.properties.hibernate.current_session_context_class : org.springframework.orm.hibernate4.SpringSessionContext
+  
