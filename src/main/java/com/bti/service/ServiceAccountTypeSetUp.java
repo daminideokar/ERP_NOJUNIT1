@@ -55,7 +55,7 @@ public class ServiceAccountTypeSetUp{
 	
 	public DtoAccountTypeSetUp saveOrUpdateAccountTypeSetUp(DtoAccountTypeSetUp dtoAccountTypeSetUp) {
 		
-		System.out.println("Api......"+Api.twoTimes(10));
+		
 		
 		LOG.info("In save or update method of Account Type SetUp");
 		
