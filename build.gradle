@@ -16,7 +16,9 @@ apply plugin: 'application'
 repositories {
     mavenCentral()
 }
-
+run {
+    main = 'com.bti.BtiApplication'
+}
 
 springBoot {
     mainClass = 'com.bti.BtiApplication'
