@@ -19,7 +19,7 @@ repositories {
 
 
 springBoot {
-    mainClass = 'com.bti.Bti'
+    mainClass = 'com.bti.BtiApplication'
 }
 
 jar {
