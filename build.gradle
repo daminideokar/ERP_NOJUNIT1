@@ -68,8 +68,7 @@ dependencies {
 	
 	compile group: 'commons-lang', name: 'commons-lang', version: '2.4'
 	
-	compile files('E:/Eclipse_API/FirstApiProject/api.jar')
-	compile files('E:/Eclipse_API/FirstApiProject/exam.jar')
+
 	
 	// https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured
 	testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '1.6'

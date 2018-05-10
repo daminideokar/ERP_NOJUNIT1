@@ -30,7 +30,7 @@ import com.bti.model.dto.DtoAccountTypeSetUp;
 import com.bti.model.dto.DtoSearch;
 import com.bti.repository.RepositoryAccountTypeSetUp;
 import com.bti.util.UtilDateAndTime;
-import com.example.Api;
+
 
 /**
  * Name of Project: BTI 
