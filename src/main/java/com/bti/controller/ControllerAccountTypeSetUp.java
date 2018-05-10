@@ -66,7 +66,7 @@ public class ControllerAccountTypeSetUp {
 	@RequestMapping(value = "/create", method = RequestMethod.POST, consumes = "application/json")
 	public ResponseMessage saveAccountTypeSetUp(HttpServletRequest request,
 			@RequestBody DtoAccountTypeSetUp dtoAccountTypeSetUp) {
-
+//RESTTEMPLATE code
 		ResponseMessage responseMessage = null;
 
 		DtoAccountTypeSetUp dtoAccountTypeSetUpRes = serviceAccountTypeSetUp

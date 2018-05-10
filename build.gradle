@@ -16,10 +16,12 @@ apply plugin: 'application'
 repositories {
     mavenCentral()
 }
-
+run {
+    main = 'com.bti.Bti'
+}
 
 springBoot {
-    mainClass = 'com.bti.BtiApplication'
+    mainClass = 'com.bti.Bti'
 }
 
 jar {
